@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://bookebi.kr/sitemap.xml
+Sitemap: https://www.bookebi.kr/sitemap.xml
