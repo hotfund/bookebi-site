@@ -147,6 +147,14 @@ h2{font-size:clamp(20px,3vw,26px);letter-spacing:-.02em;margin:0 0 8px}
 .concept-fig figcaption{margin-top:14px;font-size:14px;color:var(--sub);text-align:center}
 .concept-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;border:1px solid var(--line)}
 .concept-scroll svg{display:block;width:100%;min-width:720px;height:auto}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:0}
+.cta a{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:800;font-size:16px;border:2px solid var(--brand)}
+.cta .primary{background:var(--brand);color:#fff}
+.cta .ghost{background:var(--card);color:var(--brand)}
+.books{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:8px}
+.books .card{display:block}
+.books .card:hover{border-color:var(--brand)}
+.books .more{display:inline-block;margin-top:12px;font-weight:800;font-size:15px;color:var(--brand)}
 .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:24px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card-label{font-size:12px;font-weight:800;letter-spacing:.06em;margin:0 0 6px}
@@ -181,6 +189,30 @@ footer nav a:hover{color:var(--brand)}
 <h1>책이 AI에게 읽히고,<br>독자가 당신의 고객이 됩니다</h1>
 <p class="lead">당신의 지식을 담은 책을 AI가 인용하고, 그 답변을 본 독자가 당신을 찾습니다.</p>
 <div class="oneliner">북깨비는 당신의 지식을 AI가 읽는 책으로 만들어, 독자를 당신의 고객으로 잇는다.</div>
+<p class="cta">
+<a class="primary" href="#books">북깨비의 책 읽기</a>
+<a class="ghost" href="/author">내 책 만들기</a>
+</p>
+</div>
+</section>
+<section id="books">
+<div class="wrap">
+<h2>북깨비의 책</h2>
+<p class="h2sub">본문이 웹에 열려 있어 누구나 읽을 수 있습니다.</p>
+<div class="books">
+<a class="card" href="/aibranding" style="border-top:4px solid var(--brand)">
+<p class="card-label" style="color:var(--brand)">송인규 지음 · 출간 준비 중</p>
+<h3>AI브랜딩: AI에게 팔아야 산다</h3>
+<p>AI가 우리 회사를 정확히 설명하고, 인용하고, 추천하게 만드는 법.</p>
+<span class="more">책 보기 →</span>
+</a>
+<a class="card" href="/japanyomozomo" style="border-top:4px solid var(--crimson)">
+<p class="card-label" style="color:var(--crimson)">장범석 지음 · 1장 홋카이도 무료 공개</p>
+<h3>JapanYomoZomo</h3>
+<p>일본 47개 도도부현의 소도시·관광지 240곳과 향토 음식 240메뉴.</p>
+<span class="more">책 보기 →</span>
+</a>
+</div>
 </div>
 </section>
 <section id="how">
