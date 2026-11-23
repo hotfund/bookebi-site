@@ -151,6 +151,17 @@ h2{font-size:clamp(20px,3vw,26px);letter-spacing:-.02em;margin:0 0 8px}
 .cta a{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:800;font-size:16px;border:2px solid var(--brand)}
 .cta .primary{background:var(--brand);color:#fff}
 .cta .ghost{background:var(--card);color:var(--brand)}
+.slogan{display:flex;align-items:center;gap:16px;margin:0 0 32px;padding:20px 24px;background:var(--card);border-radius:16px;border:1px solid var(--line);max-width:38em}
+.slogan img{width:80px;height:80px;flex-shrink:0}
+.slogan-text{font-size:clamp(20px,3.5vw,28px);font-weight:900;color:var(--brand);line-height:1.3;letter-spacing:-.02em}
+.shots{position:relative;height:2.4em;overflow:hidden;margin:0 0 32px;max-width:38em}
+.shots span{display:block;position:absolute;left:0;width:100%;opacity:0;font-size:clamp(15px,2vw,18px);font-weight:700;color:var(--sub);line-height:2.4em;animation:shot 20s infinite}
+.shots span:nth-child(1){animation-delay:0s}
+.shots span:nth-child(2){animation-delay:4s}
+.shots span:nth-child(3){animation-delay:8s}
+.shots span:nth-child(4){animation-delay:12s}
+.shots span:nth-child(5){animation-delay:16s}
+@keyframes shot{0%{opacity:0;transform:translateY(100%)}5%{opacity:1;transform:translateY(0)}20%{opacity:1;transform:translateY(0)}25%{opacity:0;transform:translateY(-100%)}100%{opacity:0}}
 .books{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:8px}
 .books .card{display:block}
 .books .card:hover{border-color:var(--brand)}
@@ -185,13 +196,22 @@ footer nav a:hover{color:var(--brand)}
 <main>
 <section class="hero" style="border-top:0">
 <div class="wrap">
-<p class="eyebrow">BOOKEBI.KR · 인큐텍 그룹</p>
-<h1>책이 AI에게 읽히고,<br>독자가 당신의 고객이 됩니다</h1>
-<p class="lead">당신의 지식을 담은 책을 AI가 인용하고, 그 답변을 본 독자가 당신을 찾습니다.</p>
+<h1>AI로 책을 만들고,<br>그 책이 고객을 데려온다.</h1>
+<p class="lead">북깨비는 AI가 책을 써 주고, 그 책을 AI가 읽어서 독자에게 추천합니다.<br>독자는 당신의 고객이 됩니다.</p>
+<div class="slogan">
+<img src="https://theggabi.com/icons/icon-512.png" alt="북깨비 도깨비" width="80" height="80">
+<div class="slogan-text">책나와라 떝딱!<br>고객나와라 떝딱!</div>
+</div>
+<div class="shots">
+<span>변호사인데, 강사인데, 아직도 책이 없으세요?</span>
+<span>회사를 소개하는 책이 아직도 없으세요?</span>
+<span>블로그 10개 쓸 시간에, 책 한 권 씁니다.</span>
+<span>이미 만든 책을 웹북으로 전환하세요.</span>
+<span>PDF로 다 정리해 놓았으면, 떝딱 책이 나옵니다.</span>
+</div>
 <div class="oneliner">북깨비는 당신의 지식을 AI가 읽는 책으로 만들어, 독자를 당신의 고객으로 잇는다.</div>
 <p class="cta">
 <a class="primary" href="/author">내 책 만들기</a>
-<!-- 책 읽기 버튼과 「북깨비의 책」 목록은 책이 1권이라도 올라온 뒤에 켠다 (2026-11-23 대표 지시). 복원: git 기록의 「첫 화면 두 갈래」 커밋 -->
 </p>
 </div>
 </section>
